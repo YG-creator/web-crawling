@@ -1,0 +1,7 @@
+google html 분석
+tbm : 분야(전체(없음), 이미지(isch), 뉴스(nws), 동영상(vid), 도서(bks), 쇼핑(shop))
+q : 검색어
+hl : 언어 (한국어(ko), 영어(en))
+safe : 선정적인 결과 숨기기(active)
+restrict : 제한( 검색어 저장(search))
+tbs : 기간 (cdr:1,cd_min:월/일/년,cd_max:월/일/년)
