@@ -1,0 +1,24 @@
+1. import
+bs4 , requests   => 웹크롤링을 위해 필요
+pandas => 크롤링 결과 df으로 저장할 때 필요
+datetime => 크롤링 결과를 엑셀로 저장할 것인데, 이 때 저장하는 시간을 엑셀 이름으로 설정하기 위해 필요
+re => 정규표현식 날짜와 내용요약의 정제화 작업을 위해 필요 
+
+2. url 파라미터 (입력 변수)
+query(기본 검색어) 
+sort (정렬) : 관련도순(0),최신순(1),오래된순(2)
+ds (검색 시작 날짜)
+de(끝 날짜)
+start (페이지) : (page-1)*10+1
+pd(기간) : 1~6시간(pd=7~12),전체(0),1일(4),1주(1),1개월(2),6개월(6),1년(5),직접입력(3)
+field(영역) : 전체(0),제목(1)
+photo(유형) : 전체(0), 포토(1), 동영상(2), 지면기사(3), 보도자료(4), 자동생성기사(5)
+
+3. selector
+#sp_nws220 > div.news_wrap.api_ani_send > div > a
+
+4. 
+<a href="http://www.fnnews.com/news/202103261134518695" class="news_tit" target="_blank" onclick="return goOtherCR(this, 'a=nws*h.tit&amp;r=220&amp;i=880000FF_000000000000000004608666&amp;g=014.0004608666&amp;u='+urlencode(this.href));" 
+title="김용범 기재차관 &quot;데이터 댐에 18.1조 지원&quot;">김용범 기재차관 "<mark>데이터</mark> 댐에 18.1조 지원"</a>
+2.
+class : "news_tit"
